@@ -8,7 +8,7 @@ const router = express.Router();
 
 router.get("/", (req, res) => {
   try {
-    res.status(200).json({ message: Alerts });
+    res.status(200).json({ message: 'Alerts' });
   } catch(error) {
     console.log('Oops you did a goof: ', error);
     res.status(500).json({ message: error });
